@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrimary: #3d85d1;
+  --backgroundcolor: #1f1f1f;
+  --seconderycolor: #141414;
+  --textcolor: #9e9e9e;
+  --ffPrimary: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: transparent 1px solid;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none;
+}
+
+h1, h2, h3 h4, h5, h6 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+body {
+  font-family: var(--ffPrimary);
+  line-height: 1.5;
+  background-color: var(--backgroundcolor);
+}
+
+.header_wrap {
+  background-color: var(--seconderycolor);
+  padding-block: 1rem;
+}
+.header_wrap .header_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.header_wrap .header_inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+}
+.header_wrap .header_inner li a {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: #9e9e9e;
+}
+.header_wrap .header_inner li a:hover {
+  color: white;
+}
+.header_wrap .header_inner .btn_primary {
+  color: var(--textcolor);
+  border-color: var(--textcolor);
+  background-color: var(--seconderycolor);
+}
+.header_wrap .header_inner .btn_primary:hover {
+  background-color: var(--colorPrimary);
+  color: white;
+  border-color: var(--colorPrimary);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+.header_wrap .header_inner .btn_secondery {
+  color: var(--textcolor);
+  margin-left: 0.5rem;
+}
+.header_wrap .header_inner .btn_secondery:hover {
+  color: white;
+  border-color: var(--colorPrimary);
+  background-color: var(--colorPrimary);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.top_banner {
+  position: relative;
+}
+.top_banner :hover {
+  color: white;
+  transition: 0.3s all ease-in-out;
+}
+.top_banner img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.top_banner figcaption {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-block: 13rem;
+  color: var(--textcolor);
+  font-size: larger;
+}
+.top_banner .btn_primary {
+  color: #eeeeee;
+  background-color: var(--colorPrimary);
+}
+.top_banner .btn_primary:hover {
+  color: white;
+  background-color: color-mix(in srgb, var(--colorPrimary), black 30%);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.main_content {
+  color: #eeeeee;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.second_section {
+  background-color: var(--seconderycolor);
+  padding-block: 2rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.section1 img {
+  display: block;
+  width: auto;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.section1 figcaption {
+  color: var(--textcolor);
+  padding-right: 2rem;
+}
+.section1 :hover {
+  color: #eeeeee;
+  transition: 0.8s ease-in-out all;
+}
+.section1 :hover h2 {
+  color: #2da333;
+  transition: 0.8s ease-in-out all;
+}
+.section1 .btn_primary {
+  color: #eeeeee;
+  background-color: var(--colorPrimary);
+}
+.section1 .btn_primary:hover {
+  color: white;
+  background-color: color-mix(in srgb, var(--colorPrimary), black 30%);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.third_section {
+  padding-block: 2rem;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+}
+.section2 img {
+  display: block;
+  width: auto;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.section2 figcaption {
+  color: var(--textcolor);
+  padding-left: 2rem;
+}
+.section2 :hover {
+  color: #eeeeee;
+  transition: 0.8s ease-in-out all;
+}
+.section2 :hover h2 {
+  color: #d67922;
+  transition: 0.8s ease-in-out all;
+}
+.section2 .btn_primary {
+  color: #eeeeee;
+  background-color: var(--colorPrimary);
+}
+.section2 .btn_primary:hover {
+  color: white;
+  background-color: color-mix(in srgb, var(--colorPrimary), black 30%);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.forth_section {
+  background-color: var(--seconderycolor);
+  padding-block: 2rem;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.section3 img {
+  display: block;
+  width: auto;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.section3 figcaption {
+  color: var(--textcolor);
+  padding-right: 2rem;
+}
+.section3 :hover {
+  color: #eeeeee;
+  transition: 0.8s ease-in-out all;
+}
+.section3 :hover h2 {
+  color: #d62222;
+  transition: 0.8s ease-in-out all;
+}
+.section3 .btn_primary {
+  color: #eeeeee;
+  background-color: var(--colorPrimary);
+}
+.section3 .btn_primary:hover {
+  color: white;
+  background-color: color-mix(in srgb, var(--colorPrimary), black 30%);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.fifth_section {
+  padding-block: 2rem;
+}
+
+.section4 {
+  display: flex;
+  align-items: center;
+}
+.section4 img {
+  display: block;
+  width: auto;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.section4 figcaption {
+  color: var(--textcolor);
+  padding-left: 2rem;
+}
+.section4 :hover {
+  color: #eeeeee;
+  transition: 0.8s ease-in-out all;
+}
+.section4 :hover h2 {
+  color: #3b5ed1;
+  transition: 0.8s ease-in-out all;
+}
+.section4 .btn_primary {
+  color: #eeeeee;
+  background-color: var(--colorPrimary);
+}
+.section4 .btn_primary:hover {
+  color: white;
+  background-color: color-mix(in srgb, var(--colorPrimary), black 30%);
+  border-radius: 5rem;
+  transition: 0.8s ease-in-out all;
+}
+
+.web_footer {
+  background-color: var(--seconderycolor);
+}
+
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+.footer_wrap span {
+  color: #eeeeee;
+}
+.footer_wrap ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.footer_wrap li a {
+  color: #9e9e9e;
+}
+.footer_wrap a:hover {
+  color: #eeeeee;
+}/*# sourceMappingURL=main.css.map */
